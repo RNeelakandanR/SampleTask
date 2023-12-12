@@ -1,0 +1,44 @@
+Overview
+This Maven project is designed for automated testing, 
+primarily focused on web application testing using Selenium, Cucumber, and Extent Reports.
+
+Project Structure:
+
+testRunner.java:
+	The main class for running tests.
+	
+LoginPage.java:
+	 Defines the page object model for a login page.
+	 
+ExtentReportListener.java:
+	 Implements a listener for generating Extent reports.
+	 
+stepDefinitions.java: 
+	Contains Cucumber step definitions.
+	
+DriverManager.java: 
+	Manages WebDriver instances for Selenium.
+	
+config.properties: 
+	Configuration file with project settings like URL, browser, and login credentials.
+login.feature:
+	 Cucumber feature file for login functionality.
+	 
+pom.xml:
+	Maven Project Object Model file defining project dependencies and configurations.
+	
+Configuration:
+The config.properties file includes essential configurations:
+
+Application URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+Browser: chrome
+Username: Admin
+Password: admin123
+Dependencies
+The project uses several dependencies as defined in pom.xml, including Selenium WebDriver, Cucumber, and Extent Reports.
+
+Running the Tests
+To run the tests, use the testRunner.java class which is configured to execute the Cucumber feature files and generate reports.
+
+Reporting
+Extent reports are configured via ExtentReportListener.java, providing detailed test execution reports.
