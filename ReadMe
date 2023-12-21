@@ -1,5 +1,9 @@
 Overview
 This Maven project is designed for automated testing, 
+
+
+
+
 primarily focused on web application testing using Selenium, Cucumber, and Extent Reports.
 
 Project Structure:
